@@ -2,8 +2,9 @@
 		
 a.brand img {
 	border-radius:50%;
-	border:5px solid #fff;
+	border:5px solid #fff;	
 }
+
 #temperatura, #skills, #work, #resume {	
 	padding-top: 20%;
 	min-height:500px;
@@ -22,10 +23,12 @@ a.brand img {
 #humedad, #skills, #work, #resume {	
 	padding-top: 20%;
 	min-height:500px;
+	text-align: left;
 }
 #humedad h2, #skills h2, #work h2, #resume h2 {
 	font-weight:normal;
 	color: #39D084;
+	text-align: left;
 }
 
 #radiacion, #skills, #work, #resume {
@@ -58,6 +61,7 @@ a.brand img {
 #humedad h1 {
 color:#fff;
 font-weight: normal;
+text-align: left;
 }
 #humedad h3 {
 	color:#fff;
