@@ -4,8 +4,7 @@ a.brand img {
 	border-radius:50%;
 	border:5px solid #fff;
 }
-#temperatura, #skills, #work, #resume {
-	padding:30px 0;
+#temperatura, #skills, #work, #resume {	
 	padding-top: 20%;
 	min-height:500px;
 }
@@ -20,8 +19,7 @@ a.brand img {
 	color: #39D084;
 }
 
-#humedad, #skills, #work, #resume {
-	padding:86px 0;
+#humedad, #skills, #work, #resume {	
 	padding-top: 20%;
 	min-height:500px;
 }
@@ -31,7 +29,6 @@ a.brand img {
 }
 
 #radiacion, #skills, #work, #resume {
-	padding:86px 0;
 	padding-top: 20%;
 	min-height:500px;
 }
@@ -41,7 +38,6 @@ a.brand img {
 }
 
 #hora, #skills, #work, #resume {
-	padding:86px 0;
 	padding-top: 20%;
 	min-height:500px;
 }
