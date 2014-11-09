@@ -99,7 +99,7 @@ a.btn-temperatura:hover {
 a.btn-humedad {
 	display: inline-block;
  *display: inline;
-	padding:10% 18%;
+	padding:6% 16%;
 	background:#FFD833;
 	color:#000;
 	text-transform:uppercase;
