@@ -55,16 +55,6 @@ a.brand img {
 	color:#ccc;
 	font-weight: normal;
 }
-#temperatura p {
-	color: #878787;
-	font-size:18px;
-	line-height: 35px;
-	margin-top: 30px;
-}
-#temperatura .container .span5 {
-	padding:40px 0;
-}
-
 #humedad h1 {
 color:#fff;
 font-weight: normal;
@@ -73,16 +63,6 @@ font-weight: normal;
 	color:#fff;
 	font-weight: normal;
 }
-#humedad p {
-	color: #fff;
-	font-size:18px;
-	line-height: 35px;
-	margin-top: 30px;
-}
-#humedad .container .span5 {
-	padding:40px 0;
-}
-
 #radiacion h1 {
 	color:#00D9D2;
 	font-weight: normal;
@@ -91,16 +71,6 @@ font-weight: normal;
 	color:#ccc;
 	font-weight: normal;
 }
-#radiacion p {
-	color: #878787;
-	font-size:18px;
-	line-height: 35px;
-	margin-top: 30px;
-}
-#radiacion .container .span5 {
-	padding:40px 0;
-}
-
 #hora h1 {
 	color:#fff;
 	font-weight: normal;
@@ -109,16 +79,6 @@ font-weight: normal;
 	color:#fff;
 	font-weight: normal;
 }
-#hora p {
-	color: #fff;
-	font-size:18px;
-	line-height: 35px;
-	margin-top: 30px;
-}
-#hora .container .span5 {
-	padding:40px 0;
-}
-
 a.btn-temperatura {
 	display: inline-block;
  *display: inline;
@@ -136,7 +96,6 @@ a.btn-temperatura:hover {
 	text-decoration:none;
 	background:#11d170;
 }
-
 a.btn-humedad {
 	display: inline-block;
  *display: inline;
@@ -154,8 +113,6 @@ a.btn-humedad:hover {
 	text-decoration:none;
 	background:#FFCD31;
 }
-
-
 a.btn-radiacion {
 	display: inline-block;
  *display: inline;
@@ -213,92 +170,4 @@ ul.social-icons li a {
 }
 ul.social-icons li a:hover {
 	opacity:1;
-}
-.ps2 {
-	width:90%;
-	background:#30a5dc;
-	-moz-animation:html5 2s ease-out;
-	-webkit-animation:html5 2s ease-out;
-}
-.ai2 {
-	width:80%;
-	background:#ee742b;
-	-moz-animation:css3 2s ease-out;
-	-webkit-animation:css3 2s ease-out;
-}
-.html2 {
-	width:75%;
-	background:#f04949;
-	-moz-animation:jquery 2s ease-out;
-	-webkit-animation:jquery 2s ease-out;
-}
-.css2 {
-	width:85%;
-	background:#39d084;
-	-moz-animation:photoshop 2s ease-out;
-	-webkit-animation:photoshop 2s ease-out;
-}
- @-moz-keyframes ps2 {
-0% {
-width:0px;
-}
-100% {
-width:90%;
-}
-}
-@-moz-keyframes ai2 {
-0% {
-width:0px;
-}
-100% {
-width:80%;
-}
-}
-@-moz-keyframes html2 {
-0% {
-width:0px;
-}
-100% {
-width:75%;
-}
-}
-@-moz-keyframes css2 {
-0% {
-width:0px;
-}
-100% {
-width:85%;
-}
-}
- @-webkit-keyframes ps2 {
-0% {
-width:0px;
-}
-100% {
-width:90%;
-}
-}
-@-webkit-keyframes ai {
-0% {
-width:0px;
-}
-100% {
-width:80%;
-}
-}
-@-webkit-keyframes html {
-0% {
-width:0px;
-}
-100% {
-width:75%;
-}
-}
-@-webkit-keyframes css {
-0% {
-width:0px;
-}
-100% {
-width:85%;
-}
 }
