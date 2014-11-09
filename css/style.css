@@ -4,51 +4,202 @@ a.brand img {
 	border-radius:50%;
 	border:5px solid #fff;
 }
-.profile, .skills, .work, .resume {
+#temperatura, #skills, #work, #resume {
 	padding:30px 0;
+	padding-top: 20%;
+	min-height:500px;
 }
-.profile h2, .skills h2, .work h2, .resume h2 {
+
+#div-admin h1, h3 {
+	font-weight:normal;
+	color: #878787;
+}
+
+#temperatura h2, #skills h2, #work h2, #resume h2 {
 	font-weight:normal;
 	color: #39D084;
 }
+
+#humedad, #skills, #work, #resume {
+	padding:86px 0;
+	padding-top: 20%;
+	min-height:500px;
+}
+#humedad h2, #skills h2, #work h2, #resume h2 {
+	font-weight:normal;
+	color: #39D084;
+}
+
+#radiacion, #skills, #work, #resume {
+	padding:86px 0;
+	padding-top: 20%;
+	min-height:500px;
+}
+#radiacion h2, #skills h2, #work h2, #resume h2 {
+	font-weight:normal;
+	color: #39D084;
+}
+
+#hora, #skills, #work, #resume {
+	padding:86px 0;
+	padding-top: 20%;
+	min-height:500px;
+}
+#hora h2, #skills h2, #work h2, #resume h2 {
+	font-weight:normal;
+	color: #39D084;
+}
+
 /***** Profile *****/
-	.profile h1 {
+	#temperatura h1 {
 	color:#39d084;
 	font-weight: normal;
 }
-.profile h3 {
-	color:#fff;
+#temperatura h3 {
+	color:#ccc;
 	font-weight: normal;
 }
-.profile p {
-	color:#fff;
+#temperatura p {
+	color: #878787;
 	font-size:18px;
 	line-height: 35px;
 	margin-top: 30px;
 }
-.profile .container .span5 {
+#temperatura .container .span5 {
 	padding:40px 0;
 }
-a.hire-me {
+
+#humedad h1 {
+color:#fff;
+font-weight: normal;
+}
+#humedad h3 {
+	color:#fff;
+	font-weight: normal;
+}
+#humedad p {
+	color: #fff;
+	font-size:18px;
+	line-height: 35px;
+	margin-top: 30px;
+}
+#humedad .container .span5 {
+	padding:40px 0;
+}
+
+#radiacion h1 {
+	color:#00D9D2;
+	font-weight: normal;
+}
+#radiacion h3 {
+	color:#ccc;
+	font-weight: normal;
+}
+#radiacion p {
+	color: #878787;
+	font-size:18px;
+	line-height: 35px;
+	margin-top: 30px;
+}
+#radiacion .container .span5 {
+	padding:40px 0;
+}
+
+#hora h1 {
+	color:#fff;
+	font-weight: normal;
+}
+#hora h3 {
+	color:#fff;
+	font-weight: normal;
+}
+#hora p {
+	color: #fff;
+	font-size:18px;
+	line-height: 35px;
+	margin-top: 30px;
+}
+#hora .container .span5 {
+	padding:40px 0;
+}
+
+a.btn-temperatura {
 	display: inline-block;
  *display: inline;
-	padding:20px 60px;
+	padding:6% 14%;
 	background:#39d084;
 	color:#fff;
 	text-transform:uppercase;
-	font-size:26px;
+	font-size:2em;
 	margin:20px 0;
 	-webkit-border-radius: 40px;
 	-moz-border-radius: 40px;
 	border-radius: 40px;
 }
-a.hire-me:hover {
+a.btn-temperatura:hover {
 	text-decoration:none;
 	background:#11d170;
+}
+
+a.btn-humedad {
+	display: inline-block;
+ *display: inline;
+	padding:10% 18%;
+	background:#FFD833;
+	color:#000;
+	text-transform:uppercase;
+	font-size:1.5em;
+	margin:20px 0;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+}
+a.btn-humedad:hover {
+	text-decoration:none;
+	background:#FFCD31;
+}
+
+
+a.btn-radiacion {
+	display: inline-block;
+ *display: inline;
+	padding:6% 14%;
+	background:#00D4CD;
+	color:#fff;
+	text-transform:uppercase;
+	font-size:2em;
+	margin:20px 0;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+}
+a.btn-radiacion:hover {
+	text-decoration:none;
+	background:#00D9D2;
+}
+
+a.btn-hora {
+	display: inline-block;
+ *display: inline;
+	padding:6% 14%;
+	background:#fff;
+	color:#979797;
+	text-transform:uppercase;
+	font-size:2em;
+	margin:20px 0;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+}
+a.btn-hora:hover {
+	text-decoration:none;
+	background:#F2F2F2;
 }
 .social {
 	text-align:center;
 	padding-bottom:80px;
+	color:#777;
+	padding-top:100px;
 }
 ul.social-icons {
 	margin:20px 0;
@@ -66,78 +217,6 @@ ul.social-icons li a {
 }
 ul.social-icons li a:hover {
 	opacity:1;
-}
-/***** Skills *****/
-.skills .span3 {
-	width:235px;
-	overflow: hidden;
-}
-.skills .span5 {
-	text-align:left;
-	padding:47px 0;
-}
-.skills .ps, .skills .ai, .skills .html, .skills .css {
-	padding:25px;
-	width:100px;
-	height:100px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-	text-align:center;
-	border:8px solid #203748;
-	float:right;
-	-webkit-transition: all 0.2s linear;
-	-moz-transition: all 0.2s linear;
-	-o-transition: all 0.2s linear;
-	transition: all 0.2s linear;
-}
-.skills .ps {
-	background:#30a5dc;
-}
-.skills .ai {
-	background:#ee742b;
-}
-.skills .html {
-	background:#f04949;
-}
-.skills .css {
-	background:#39d084;
-}
-.skills .ps:hover, .skills .ai:hover, .skills .html:hover, .skills .css:hover {
-	border:8px solid #fff;
-}
-.skills .ps h3, .skills .ai h3, .skills .html h3, .skills .css h3 {
-	color:#fff;
-	font-size: 3.4em;
-	font-weight: normal;
-	line-height: 80px;
-}
-.skills .html h3, .skills .css h3 {
-	font-size: 2.2em;
-}
-.expand-bg {
-	background: none repeat scroll 0 0 #EAEDF2;
-	border-radius:16px;
-	height: 16px;
-	margin-bottom: 15px;
-	position: relative;
-	padding: 0 2px;
-}
-.expand {
-	border-radius: 10px;
-	height: 4px;
-	margin: 2px 0;
-	padding: 4px 0 4px 5px;
-	position: absolute;
-}
-.skills .span5 h3 {
-	font-size: 18.5px;
-	line-height: 15px;
-	font-weight:normal;
-	text-transform:uppercase;
-}
-.skills .span5 h3 span {
-	float:right;
 }
 .ps2 {
 	width:90%;
@@ -226,54 +305,4 @@ width:0px;
 100% {
 width:85%;
 }
-}
-/**** Work container *****/
-ul.work-images li {
-	list-style:none;
-	display:inline-block;
-	margin: 8px 10px;
- background:
-}
-ul.work-images li:first-child {
-	margin-left:0;
-}
-ul.work-images li div {
-	background:url(../img/eye.png) 50% 50% no-repeat;
-	background-color: #f04949;
-	-webkit-transition: all 0.2s linear;
-	-moz-transition: all 0.2s linear;
-	-o-transition: all 0.2s linear;
-	transition: all 0.2s linear;
-}
-ul.work-images li img {
-	-webkit-transition: all 0.2s linear;
-	-moz-transition: all 0.2s linear;
-	-o-transition: all 0.2s linear;
-	transition: all 0.2s linear;
-}
-ul.work-images li img:hover {
-	opacity:0.1;
-}
-/***** Resume container *****/
-.resume h3 {
-	margin:60px 0;
-}
-.resume .btn-center {
-	text-align:center;
-}
-.footer {
-	background:#355267;
-	position: fixed;
-	width: 100%;
-	bottom:0;
-}
-.footer p {
-	margin:20px 0;
-}
-.footer p a {
-	color:#fff;
-	text-decoration:none;
-}
-.footer p a:hover {
-	color:#39d084;
 }

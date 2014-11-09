@@ -11,41 +11,16 @@
     <!-- styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/style-single-page.css" rel="stylesheet">    
+    <link href="css/style.css" rel="stylesheet">        
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
     <!-- Add jQuery library -->
     <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
     <!-- Add fancyBox main JS and CSS files -->
     <script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
-    <!-- muestra un menú cuando minimiza la pantalla (vista para tablets-->
-    <script>
-                $(document).ready(function() {
-            $(".fancybox-thumb").fancybox({
-                helpers : {
-                    title : {
-                        type: 'inside'
-                    },
-                    overlay : {
-                                css : {
-                                    'background' : 'rgba(1,1,1,0.65)'
-                                }
-                            }
-                }
-            });
-        });
-    </script> 
-      <!-- Muestra El About y lo oculta-->   
-    <script type="text/javascript">
-    function mostrar() {
-          div = document.getElementById('flotante');
-          if ( div.style.display == 'none')          {
-            div.style.display = 'block'          }
-          else{             
-            div.style.display = 'none';
-          }
-        }
-    </script> 
+    <!-- muestra un menú cuando minimiza la pantalla (vista para tablets // oculta y muestra Sobre el Proyecto-->
+    <script type="text/javascript" src="js/div-menu.js"></script>
+
     </head>
     <body>
     <!-- inicio Barra de Menú Superior-->    
@@ -73,8 +48,7 @@
         <div class="span5">
           <h1>Temperatura</h1>
           <h3>Esta se trae desde la Base de datos</h3>
-          <p> Acá en un párrafo iria la temperatura</p>
-          <a href="#" class="btn-temperatura"> O acá  </a>          
+          <a href="#" class="btn-temperatura">Acá</a>          
         </div>
       </div>
       </section>
@@ -85,19 +59,17 @@
       <div class="span5">        
         <div class="span6"> <img src="img/aire.png"> </div> 
         <div class="span6">
-          <h1 align="center">HUMEDAD DEL AIRE</h1>
-          <h3></h3>
-          <p> Acá en un párrafo iria la Humedad del aire</p>
-          <a href="#" class="btn-humedad"> O acá  </a>          
+          <h1 align="center">HUMEDAD DEL AIRE</h1>     
+          <h3>Esta se trae desde la Base de datos</h3>          
+          <a href="#" class="btn-humedad">Acá</a>          
         </div>
       </div>
        <div class="span5">
        <div class="span6"> <img src="img/tierra.png"> </div> 
         <div class="span6">
-          <h1 align="center">HUMEDAD DEL SUELO</h1>
-          <h3></h3>
-          <p> Acá en un párrafo iria la Humedad del suelo</p>
-          <a href="#" class="btn-humedad"> O acá  </a>          
+          <h1 align="center">HUMEDAD SUELO</h1>
+          <h3>Esta se trae desde la Base de datos</h3>
+          <a href="#" class="btn-humedad">Acá</a>          
         </div>
         
       </div>    
@@ -110,9 +82,8 @@
         <div class="span3"> <img src="img/sol.png"> </div> 
         <div class="span5">
           <h1>RADIACIÓN</h1>
-          <h3></h3>
-          <p> Acá en un párrafo iria la radiación del invernadero</p>
-          <a href="#" class="btn-radiacion">O acá  </a>          
+          <h3>Esta se trae desde la Base de datos</h3>
+          <a href="#" class="btn-radiacion">Acá</a>          
         </div>
       </div>
       </section>
@@ -123,9 +94,8 @@
         <div class="span3"> <img src="img/hora.png"> </div> 
         <div class="span5">
           <h1>HORA</h1>
-          <h3></h3>
-          <p> Acá en un párrafo iria la hora de la última consulta</p>
-          <a href="#" class="btn-hora">O acá  </a>          
+          <h3>Esta se trae desde la Base de datos</h3>
+          <a href="#" class="btn-hora">Acá</a>          
         </div>
       </div>     
       </section>
