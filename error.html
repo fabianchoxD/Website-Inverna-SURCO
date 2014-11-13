@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>Login Invernadero SURCO</title>
-    <link rel="stylesheet" href="css/style-login.css" media="screen" type="text/css" />  
-      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style-login.css" media="screen" type="text/css" />
+    <script src="lib/sweet-alert.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="lib/sweet-alert.css">  
+      <script src="js/jquery-1.10.1.min.js"></script>
+       <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  
 </head>
+
+
 <body>
     <div class="titular">
             <h1 class="titulo">
                 Bienvenido a Invernadero SURCO
             </h1> 
-
             <br>
-
             <h4 class="titulo4">
                 Por favor ingrese su Usuario y Contraseña para continuar
             </h4> 
@@ -29,5 +33,16 @@
         </form>
     </div> <!-- end login -->
 
-</body>
-</html>
+    <script>
+        $(document).ready(function() {
+    swal({ 
+      title: "Error",
+       text: "Usuario o Contraseña Errados",
+        type: "error" 
+      },
+      function(){
+        window.location.href = 'login.html';
+    });
+});
+    </script>
+
