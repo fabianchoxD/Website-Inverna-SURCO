@@ -89,6 +89,16 @@ img {
 	border: 0;
 	-ms-interpolation-mode: bicubic;
 }
+ul .social-icons img{
+
+	max-width: 100%;
+  	width: auto\9;
+	height: auto;
+	vertical-align: middle;
+	border: 0;
+
+
+}
 #map_canvas img, .google-maps img {
 	max-width: none;
 }
@@ -2434,9 +2444,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 	border-left: 1px solid #f2f2f2;
 	border-right: 1px solid #ffffff;
 }
-.navbar .btn, .navbar .btn-group {
-	margin-top: 5px;
-}
+
 .navbar .btn-group .btn, .navbar .input-prepend .btn, .navbar .input-append .btn, .navbar .input-prepend .btn-group, .navbar .input-append .btn-group {
 	margin-top: 0;
 }
@@ -2562,11 +2570,13 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 	display: none;
 	float: right;
 	padding: 32px;
-	color: #ffffff;
+	color: #ffffff;		
+	 background: url(../img/menu.png) no-repeat center;	
 	background-color: #39D084;
  *background-color: #e5e5e5;
 /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 }
+
 .navbar .btn-navbar:hover, .navbar .btn-navbar:focus, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled] {
 	color: #ffffff;
 	background-color: #e5e5e5;
@@ -4073,10 +4083,16 @@ button.close {
 }
 }
 @media (max-width: 767px) {
+
+	body .navbar .btn-navbar {
+ display: block;
+ padding-right: 10%;
+}
  body {
  padding-left: 0;
- padding-right: 0;
+
 }
+
  .navbar-fixed-top,  .navbar-fixed-bottom,  .navbar-static-top {
  margin-left: -20px;
  margin-right: -20px;
@@ -5290,6 +5306,7 @@ img {
 }
  .navbar .btn-navbar {
  display: block;
+ padding-right: 6%;
 }
  .navbar-static .navbar-inner {
  padding-left: 10px;
