@@ -9,6 +9,7 @@
     <meta name="author" content="Fabian Varon - Joan Sebastian">
     <meta name="description" content="En esta página se podrán consultar los estados de los diferentes Compenentes del Invernadero Controlado por Android-Arduino">
     <!-- styles -->
+    
     <link href="css/style.css" rel="stylesheet">   
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">    
@@ -19,8 +20,51 @@
     <script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
     <!-- muestra un menú cuando minimiza la pantalla (vista para tablets // oculta y muestra Sobre el Proyecto-->
     <script type="text/javascript" src="js/div-menu.js"></script>
+    <!-- Permite los scrpits para las Gráficas-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
-    </head>
+<script src="js/highcharts.js"></script>
+<script src="js/exporting.js"></script> 
+
+    <script type="text/javascript">
+$(function () {
+    $('#graficashumed').highcharts({
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'Humedades InvernaderoSURCO'
+        },
+        subtitle: {
+            text: 'Humedades del Aire y Suelo'
+        },
+        xAxis: {
+            categories: ['Lun', 'Mart', 'Mierc', 'Juev', 'Vier', 'Sab', 'Dom']
+        },
+        yAxis: {
+            title: {
+                text: 'Humedad (%)'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
+        series: [{
+            name: 'Aire',
+            data: [33, 31,30, 27, 35, 33.2, 28.9]
+        }, {
+            name: 'Suelo',
+            data: [39, 34.2, 35.7, 28.5, 11.9, 25.2, 37.0]
+        }]
+    });
+});
+    </script>
+        </head>
     <body>
     <!-- inicio Barra de Menú Superior-->    
     <div class="navbar navbar-fixed-top">
@@ -71,12 +115,15 @@
           <h1 align="center">HUMEDAD SUELO</h1>
           <h3>Esta se trae desde la Base de datos</h3>
           <a href="#" class="btn-humedad">Acá</a>          
-        </div>
-        
-      </div>    
+        </div>        
+      </div>            
       </div>  
       </section>
       <!--FIN: Section Humedad-->
+      <!-- Sección Grafica Humedad-->       
+       <div id="graficashumed">
+       </div>  
+      <!-- FIN: Sección Gráfica Humedad--> 
       <!--Section radiación -->
       <section class="color3">  
       <div id="radiacion" class="container">
@@ -123,6 +170,6 @@
       <!-- FIN sobre el proyecto -->
      <!-- Scripts -->
     <script src="js/vertical-scroll.js"></script>
-    <script src="js/bootstrap.min.js"></script>   
+    <script src="js/bootstrap.min.js"></script>     
     </body>
     </html>

@@ -49,6 +49,17 @@ a.brand img {
 	color: #39D084;
 }
 
+
+#graficashumed, #skills, #work, #resume {	
+	padding-top: 10%;
+	min-height:500px;
+}
+#graficashumed h2, #skills h2, #work h2, #resume h2 {
+	font-weight:normal;
+	color: #39D084;
+
+}
+
 /***** Profile *****/
 	#temperatura h1 {
 	color:#39d084;
