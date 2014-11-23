@@ -5,9 +5,16 @@ a.brand img {
 	border:5px solid #fff;	
 }
 
-#temperatura, #radiacion, #hora, #graficashumed, #grafcasTemp, #graficasrad{	
+#temperatura, #radiacion, #hora{	
 	padding-top: 20%;
 	min-height:500px;
+}
+
+#grafcasTemp, #graficasrad{
+	padding-bottom: 10%;
+}
+#graficashumed{
+	padding-top: 5%;
 }
 #humedad{	
 	padding-top: 20%;
