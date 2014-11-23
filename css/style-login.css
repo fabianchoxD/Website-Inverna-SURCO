@@ -8,6 +8,27 @@
 
 /* ---------- GENERAL ---------- */
 
+
+@media screen and (max-width:980px) {
+
+			
+
+body h1{width: 98%;
+
+}
+
+		#login {
+			display: block;
+			margin-top: 0em;
+			width:98%;
+		}
+		form {
+			width:100%;
+			display: block;
+			margin-top: 0em;
+		}
+	}
+
 body {
 	background: #fff;
 	color: #606468;
@@ -18,8 +39,8 @@ body {
 input {
 	border: none;
 	font-family: 'sans-serif', Arial, sans-serif;
-	font-size: 14px;
-	line-height: 1.5em;
+	font-size: 13px;
+	line-height: 4.5em;
 	padding: 0;
 	-webkit-appearance: none;
 }
@@ -41,8 +62,8 @@ p {
 
 /* ---------- LOGIN ---------- */
 
-#login {
-	margin: 50px auto;
+#login{
+	margin: auto;
 	width: 280px;
 }
 
@@ -56,6 +77,16 @@ p {
 	line-height: 50px;
 	text-align: center;
 	width: 50px;
+
+}
+h5{text-align: center;
+
+padding-top: 0%;
+padding-bottom: 0%;}
+
+#btn2{
+	height: 60px;
+	width: 280px;
 }
 
 #login form input {
@@ -78,13 +109,28 @@ p {
 	background-color: #05BE77;
 	color: #eee;
 	font-weight: bold;
-	margin-bottom: 2em;
 	text-transform: uppercase;
 	width: 280px;
 }
 
 #login form input[type="submit"]:hover {
 	background-color: #03AF6D;
+}
+
+
+#btn2 input[type="submit"] {
+	border-radius: 3px;
+	
+	-webkit-border-radius: 3px;
+	background-color: #be054c;
+	color: #eee;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 280px;
+}
+
+#btn2 input[type="submit"]:hover {
+	background-color: #a50442;
 }
 
 #login > p {
@@ -104,7 +150,7 @@ body .titular .titulo4 {
   padding: 0;
 }
 body .titular {
-		padding-top: 13%; 
+		padding-top: 8%; 
 }
 body .titular .titulo {
   text-align: center;
