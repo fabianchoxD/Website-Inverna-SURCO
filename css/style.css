@@ -149,3 +149,27 @@ ul.social-icons li a {
 ul.social-icons li a:hover {
 	opacity:1;
 }
+
+
+
+.btnsalir {
+	background-color:#008d88;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:20px;
+	padding:29px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+.btnsalir:hover {
+	background-color:#ce0100;
+}
+.btnsalir:active {
+	position:relative;
+	top:1px;
+}
