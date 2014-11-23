@@ -25,7 +25,81 @@
 
 <script src="js/highcharts.js"></script>
 <script src="js/exporting.js"></script> 
+<!--Script Graficas Temperatura-->
+    <script type="text/javascript">
+$(function () {
+    $('#grafcasTemp').highcharts({
+        chart: {
+            type: 'spline'
+        },
+        title: {
+            text: 'Monthly Average Temperature'
+        },
+        subtitle: {
+            text: 'Source: WorldClimate.com'
+        },
+        xAxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        },
+        yAxis: {
+            title: {
+                text: 'Temperature'
+            },
+            labels: {
+                formatter: function () {
+                    return this.value + '°';
+                }
+            }
+        },
+        tooltip: {
+            crosshairs: true,
+            shared: true
+        },
+        plotOptions: {
+            spline: {
+                marker: {
+                    radius: 4,
+                    lineColor: '#666666',
+                    lineWidth: 1
+                }
+            }
+        },
+        series: [{
+            name: 'Tokyo',
+            marker: {
+                symbol: 'square'
+            },
+            data: [7.0, 6.9, 25.5, 14.5, 18.2, 21.5, 25.5, {
+                y: 25.5,
+                marker: {
+                    symbol: 'url(http://www.highcharts.com/demo/gfx/sun.png)'
+                }
+            }, 23.3, {
+                y: 25.5,
+                marker: {
+                    symbol: 'url(http://www.highcharts.com/demo/gfx/sun.png)'
+                }
+            }, 25.5, 9.6]
 
+        }, {
+            name: 'London',
+            marker: {
+                symbol: 'diamond'
+            },
+            data: [{
+                y: 3.9,
+                marker: {
+                    symbol: 'url(http://www.highcharts.com/demo/gfx/snow.png)'
+                }
+            }, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+        }]
+    });
+});
+    </script>
+    <!--FIN Script Graficas Temperatura-->
+
+    <!--Graficas Humedad-->
     <script type="text/javascript">
 $(function () {
     $('#graficashumed').highcharts({
@@ -64,6 +138,91 @@ $(function () {
     });
 });
     </script>
+     <!--FIN Script Graficas Humedad-->
+
+    <!--Script Graficas Radiacion-->
+    
+    <script type="text/javascript">
+$(function () {
+    $(document).ready(function () {
+        Highcharts.setOptions({
+            global: {
+                useUTC: false
+            }
+        });
+
+        $('#graficasrad').highcharts({
+            chart: {
+                type: 'spline',
+                animation: Highcharts.svg, // don't animate in old IE
+                marginRight: 10,
+                events: {
+                    load: function () {
+
+                        // set up the updating of the chart each second
+                        var series = this.series[0];
+                        setInterval(function () {
+                            var x = (new Date()).getTime(), // current time
+                                y = Math.random();
+                            series.addPoint([x, y], true, true);
+                        }, 1000);
+                    }
+                }
+            },
+            title: {
+                text: 'Live random data'
+            },
+            xAxis: {
+                type: 'datetime',
+                tickPixelInterval: 150
+            },
+            yAxis: {
+                title: {
+                    text: 'Value'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+            tooltip: {
+                formatter: function () {
+                    return '<b>' + this.series.name + '</b><br/>' +
+                        Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' +
+                        Highcharts.numberFormat(this.y, 2);
+                }
+            },
+            legend: {
+                enabled: false
+            },
+            exporting: {
+                enabled: false
+            },
+            series: [{
+                name: 'Random data',
+                data: (function () {
+                    // generate an array of random data
+                    var data = [],
+                        time = (new Date()).getTime(),
+                        i;
+
+                    for (i = -19; i <= 0; i += 1) {
+                        data.push({
+                            x: time + i * 1000,
+                            y: Math.random()
+                        });
+                    }
+                    return data;
+                }())
+            }]
+        });
+    });
+});
+    </script>
+
+    <!--FIN Script Graficas Radiacion-->
+
         </head>
     <body>
     <!-- inicio Barra de Menú Superior-->    
@@ -98,6 +257,9 @@ $(function () {
       </div>
       </section>
       <!--FIN: Section Temperatura-->
+       <!-- Sección Grafica Temperatura-->       
+       <div id="grafcasTemp"></div>  
+      <!-- FIN: Sección Gráfica Temperatura-->       
       <!--Section Humedad-->
       <section class="color2">  
       <div class="row-fluid" id="humedad">
@@ -121,8 +283,7 @@ $(function () {
       </section>
       <!--FIN: Section Humedad-->
       <!-- Sección Grafica Humedad-->       
-       <div id="graficashumed">
-       </div>  
+       <div id="graficashumed"></div>  
       <!-- FIN: Sección Gráfica Humedad--> 
       <!--Section radiación -->
       <section class="color3">  
@@ -136,6 +297,9 @@ $(function () {
       </div>
       </section>
       <!--FIN: Section radiación -->
+       <!-- Sección Grafica Radiación-->       
+       <div id="graficasrad"></div>  
+      <!-- FIN: Sección Gráfica Radiación--> 
       <!-- Section Hora -->
       <section class="color4">  
       <div id="hora" class="container">

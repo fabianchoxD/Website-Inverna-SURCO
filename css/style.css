@@ -60,6 +60,16 @@ a.brand img {
 
 }
 
+#grafcasTemp, #skills, #work, #resume {	
+	padding-top: 10%;
+	min-height:500px;
+}
+
+#graficasrad, #skills, #work, #resume {	
+	padding-top: 10%;
+	min-height:500px;
+}
+
 /***** Profile *****/
 	#temperatura h1 {
 	color:#39d084;
